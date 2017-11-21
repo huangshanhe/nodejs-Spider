@@ -12,8 +12,8 @@ node girlSpider.js
 
 - 有这些依赖
 
-                负责对抓取的数据进行处理的：cheerio
-                负责下载图片的fs模块:　fs
-                负责格式化图片名称的模块：pathpath
-                负责处理异步并发的模块:　asyncasync
+        负责对抓取的数据进行处理的：cheerio
+        负责下载图片的fs模块:　fs
+        负责格式化图片名称的模块：pathpath
+        负责处理异步并发的模块:　asyncasync
 
