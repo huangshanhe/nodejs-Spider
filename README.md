@@ -16,4 +16,5 @@ node girlSpider.js
         负责下载图片的fs模块:　fs
         负责格式化图片名称的模块：pathpath
         负责处理异步并发的模块:　asyncasync
+        负责创建文件夹:　mkdirp
 
