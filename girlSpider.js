@@ -10,7 +10,7 @@ var async = require('async');
 var url = 'http://desk.zol.com.cn/meinv/1920x1080/1.html';
 
 // 本地存储目录
-var dir = './girlImages/';
+var dir = './girlImages';
 
 // 图片链接地址
 var links = [];
@@ -36,6 +36,7 @@ request(url, function(error, response, body) {
         // 每次只执行一个异步操作
         async.mapSeries(links, function(item, callback) {
             download(item, dir, Math.floor(Math.random()*100000) + item.substr(-4,4));
+            console.log('成功下载图片'+item.substr(-10,10));
             callback(null, item);
         }, function(err, results) {});
     }
