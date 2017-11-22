@@ -20,7 +20,7 @@ mkdirp(dir, function(err) {
     if(err){
         console.log(err);
     } else {
-        console.log(dir+'文件夹创建成功!正在下载');
+        console.log(dir+'文件夹创建成功!准备下载');
     }
 });
 
