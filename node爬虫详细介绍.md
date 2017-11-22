@@ -30,7 +30,6 @@
 4.有时间可以把爬到的内容更好地展示出来，我这就躺在文件夹里。
 
 ![haha](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E6%88%AA%E5%9B%BE.png)
-![性感](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E6%80%A7%E6%84%9F.png)
 
 注意: 爬取具体页面内容 使用 async 控制异步并发数量 
 
