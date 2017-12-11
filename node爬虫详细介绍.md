@@ -26,15 +26,13 @@
 注意: 爬取具体页面内容 使用 async 控制异步并发数量 
 
 不然很容易被单IP的巨量 URL 请求攻击到崩溃。为了做一个好公民，也为了减轻网站的压力（其实为了不被封IP），
-我限制了同时并发量最高为5。这里用到了另一个非常强大的库 async ，让我们控制并发量变得十分轻松，简单的介绍如下。
+我限制了同时并发量最高为5。
 
 ![限制并发](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/limit.png)
 
+这里用到了一个非常强大的库 async ，让我们控制并发量变得十分轻松，简单的介绍如下。
 async(https://github.com/caolan/async#queueworker-concurrency)，async是一个流程控制工具包，
 提供了直接而强大的异步功能mapLimit(arr, limit, iterator, callback)。
-
-async 的 mapLimit(arr, limit, iterator, callback) 接口。
-另外，还有个常用的控制并发连接数的接口是 queue(worker, concurrency) ，大家可以去看看它的API。
 
 最后
 
