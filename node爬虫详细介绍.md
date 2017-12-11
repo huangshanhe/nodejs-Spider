@@ -4,14 +4,6 @@
 
 **前端同学可能向来对爬虫不是很感冒，觉得爬虫需要用偏后端的语言，诸如 php ， python 等。当然这是在 nodejs 前了，nodejs 的出现，使得 Javascript 也可以用来写爬虫了。由于 nodejs 强大的异步特性，让我们可以轻松以异步高并发去爬取网站，比如一些用户信息，图片，资源种子等**
 
-要读懂本文，其实只需要有
-
-- 能看懂 Javascript 及 JQuery
-
-- 简单的nodejs基础
-
-- http 网络抓包 和 URL 基础
-
 ## 爬虫步骤 ##
 
 1.添加依赖 选好想爬的url 检查分析下页面结构
@@ -27,7 +19,7 @@
 
 ![存](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%AD%98.png)
 
-4.有时间可以把爬到的内容更好地展示出来，我这就躺在文件夹里。
+4.有时间可以把爬到的内容更好地展示出来，我这就放在文件夹里没去处理。
 
 ![haha](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E6%88%AA%E5%9B%BE.png)
 
@@ -41,14 +33,8 @@
 async(https://github.com/caolan/async#queueworker-concurrency)，async是一个流程控制工具包，
 提供了直接而强大的异步功能mapLimit(arr, limit, iterator, callback)。
 
-这次我们要介绍的是 async 的 mapLimit(arr, limit, iterator, callback) 接口。
+async 的 mapLimit(arr, limit, iterator, callback) 接口。
 另外，还有个常用的控制并发连接数的接口是 queue(worker, concurrency) ，大家可以去看看它的API。
-
-
-
-
-
-
 
 最后
 
