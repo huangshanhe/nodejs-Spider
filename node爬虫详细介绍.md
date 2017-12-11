@@ -13,7 +13,7 @@
 
 如果要好多页，那就根据url下一页规则拼接好放入数组待会统一请求
 比如说豆瓣是第二页不是2，是25，第三页是50，那就是每页+25
-![下一页规则(]https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E4%B8%8B%E4%B8%80%E9%A1%B5%E8%A7%84%E5%88%99.png)
+![下一页规则](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E4%B8%8B%E4%B8%80%E9%A1%B5%E8%A7%84%E5%88%99.png)
 
 2.抓取页面结构，把关键字段存起来
 
