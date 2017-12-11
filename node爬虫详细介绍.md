@@ -34,6 +34,12 @@
 async(https://github.com/caolan/async#queueworker-concurrency)，async是一个流程控制工具包，
 提供了直接而强大的异步功能mapLimit(arr, limit, iterator, callback)。
 
+爬图片这些都是虚的，来点实的就是豆瓣租房小组找免中介费的房子，前面都一样，关键是
+加入小组
+![加入小组](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E8%B1%86%E7%93%A3%E7%A7%9F%E6%88%BF.png)
+开始搜索
+![开始搜索](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E7%A7%9F%E6%88%BF.png)
+
 最后
 
 一个简单的爬虫就完成了， 大家可以去尝试一下爬爬自己感兴趣的内容，代码量不多，更多时间是去分析页面结构处理各种问题。
