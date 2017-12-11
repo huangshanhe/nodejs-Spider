@@ -11,6 +11,10 @@
 ![分析](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%88%86%E6%9E%90.png)
 ![头](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%A4%B4.png)
 
+如果要好多页，那就根据url下一页规则拼接好放入数组待会统一请求
+比如说豆瓣是第二页不是2，是25，第三页是50，那就是每页+25
+![下一页规则(]https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E4%B8%8B%E4%B8%80%E9%A1%B5%E8%A7%84%E5%88%99.png)
+
 2.抓取页面结构，把关键字段存起来
 
 ![抓取](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E6%8B%BF%E6%95%B0%E6%8D%AE.png)
@@ -34,7 +38,7 @@
 async(https://github.com/caolan/async#queueworker-concurrency)，async是一个流程控制工具包，
 提供了直接而强大的异步功能mapLimit(arr, limit, iterator, callback)。
 
-爬图片这些都是虚的，来点实的就是豆瓣租房小组找免中介费的房子，前面都一样，关键是
+爬图片这些都是虚的，来点实的就是豆瓣租房小组找免中介费的房子，前面都一样
 加入小组
 ![加入小组](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E8%B1%86%E7%93%A3%E7%A7%9F%E6%88%BF.png)
 开始搜索
