@@ -12,6 +12,7 @@
 ![头](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%A4%B4.png)
 
 request(https://github.com/request/request)使得请求变得更容易，简单
+
 cheerio(https://github.com/cheeriojs/cheerio)用来解析dom结构，类似jQuery，挺好用
 
 如果要好多页，那就根据url下一页规则拼接好放入数组待会统一请求
