@@ -4,16 +4,18 @@
 
 **前端同学可能向来对爬虫不是很感冒，觉得爬虫需要用偏后端的语言，诸如 php ， python 等。当然这是在 nodejs 前了，nodejs 的出现，使得 Javascript 也可以用来写爬虫了。由于 nodejs 强大的异步特性，让我们可以轻松以异步高并发去爬取网站，比如一些用户信息，豆瓣小组租房信息，图片，资源种子等**
 
+## 首先简单介绍下主要依赖 ##
+
+* [request](https://github.com/request/request)  使得请求变得更容易，简单
+
+* [cheerio](https://github.com/cheeriojs/cheerio)   用来解析dom结构，类似jQuery，挺好用
+
 ## 爬虫步骤 ##
 
 1.添加依赖 选好想爬的url 检查分析下页面结构
 
 ![分析](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%88%86%E6%9E%90.png)
 ![头](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%A4%B4.png)
-
-* [request](https://github.com/request/request)  使得请求变得更容易，简单
-
-* [cheerio](https://github.com/cheeriojs/cheerio)   用来解析dom结构，类似jQuery，挺好用
 
 如果要好多页，那就根据url下一页规则拼接好放入数组待会统一请求
 比如说豆瓣是第二页不是2，是25，第三页是50，那就是每页+25
