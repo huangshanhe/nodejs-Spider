@@ -25,7 +25,7 @@ function requestMore(url,index){
 
 // 目标网址
 let urls = [];
-for(let i=0;i<30;i++){//push前X页
+for(let i=0;i<50;i++){//push前X页
     urls.push('https://www.douban.com/group/595637/discussion?start='+(i*25));
 }
 
