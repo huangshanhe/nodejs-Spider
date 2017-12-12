@@ -14,8 +14,8 @@
 
 1.添加依赖 选好想爬的url 检查分析下页面结构
 
+![依赖](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%A4%B4.png)
 ![分析](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%88%86%E6%9E%90.png)
-![头](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%A4%B4.png)
 
 如果要好多页，那就根据url下一页规则拼接好放入数组待会统一请求
 比如说豆瓣是第二页不是2，是25，第三页是50，那就是每页+25
