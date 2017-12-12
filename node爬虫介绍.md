@@ -33,7 +33,7 @@
 
 ![haha](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E6%88%AA%E5%9B%BE.png)
 
-注意: 爬取具体页面内容 使用 async 控制异步并发数量 
+注意: 爬的时候用async控制一下异步并发数量 
 
 不然很容易被单IP的巨量 URL 请求攻击到崩溃。为了做一个好公民，也为了减轻网站的压力（其实为了不被封IP），
 我限制了同时并发量最高为5。
