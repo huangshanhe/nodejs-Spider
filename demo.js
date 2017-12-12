@@ -7,7 +7,7 @@ var mkdirp = require('mkdirp');
 // 需要爬的网址
  let url = 'http://www.mmjpg.com/mm/1';
 
- console.log('目标网址已经暴露，爬这个网站的任务就交给你了，当是课后作业了')
+ console.log('目标网址(彩蛋)已经暴露，爬这个网站的任务就交给你了，当是课后作业了')
 
 // 头助攻
 var options = {
