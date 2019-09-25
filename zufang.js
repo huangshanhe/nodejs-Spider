@@ -12,9 +12,9 @@ function requestMore(url,index){
         {url: url,headers:{'User-Agent': 'request'}},
         function(error, response, body) {
         if(!error && response.statusCode == 200) {
-            let $ = cheerio.load(body);
+            const $ = cheerio.load(body);
             $('.title a').each(function() {
-                let info = $(this).attr('title') || '无';
+                const info = $(this).attr('title') || '无';
                 if(info.indexOf('湘云雅苑') != -1){//关键字为湘云雅苑
                     console.log('标题:'+$(this).attr('title').slice(0,40)+'\n网址:'+$(this).attr('href')+'\n');
                 }
