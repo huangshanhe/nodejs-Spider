@@ -34,7 +34,7 @@ function requestMore(url,index){
     // 发送请求
     request(url, function(error, response, body) {
         if(!error && response.statusCode == 200) {
-            let $ = cheerio.load(body);
+            const $ = cheerio.load(body);
             $('.photo-list-padding a img').each(function() {
                 let src = $(this).attr('src');
                 src = src.replace(/t_s208x130c5/, 't_s960x600c5');
