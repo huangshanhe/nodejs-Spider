@@ -7,7 +7,7 @@ const mkdirp = require('mkdirp');
 const async = require('async');
 
 // 本地存储目录
-let dir = './tiebaImages';
+const dir = './tiebaImages';
 
 // 图片链接地址
 let links = [];
