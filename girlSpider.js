@@ -1,4 +1,4 @@
-//依赖模块
+// 依赖模块
 const fs = require('fs');
 const path = require('path');
 const request = require("request");
@@ -7,7 +7,7 @@ const mkdirp = require('mkdirp');
 const async = require('async');
 
 // 本地存储目录
-let dir = './girlImages';
+const dir = './girlImages';
 
 // 图片链接地址
 let links = [];
@@ -53,7 +53,7 @@ function requestMore(url,index){
 
 // 目标网址
 let urls = [];
-for(let i=1;i<2;i++){//push前X页
+for(let i=1;i<2;i++){// push前X页
     urls.push('http://desk.zol.com.cn/meinv/1920x1080/'+i+'.html');
 }
 
