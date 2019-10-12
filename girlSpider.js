@@ -53,10 +53,10 @@ function requestMore(url,index){
 
 // 目标网址
 let urls = [];
-for(let i=1;i<2;i++){// push前X页
+for(let i = 1; i < 2; i++){// push前X页
     urls.push('http://desk.zol.com.cn/meinv/1920x1080/'+i+'.html');
 }
 
-for(let i=0;i<urls.length;i++){
-    requestMore(urls[i],i+1);
+for(let i=0; i < urls.length; i++){
+    requestMore(urls[i], i+1);
 }
