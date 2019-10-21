@@ -43,11 +43,11 @@ function requestMore(url,index){
             });
             // 限制单ip请求并发 5个一次
             async.mapLimit(links, 5, function(item, callback) {
-                download(item, dir, Math.floor(Math.random()*100000) + item.substr(-4,4));//随机数防止图片重名
-                console.log('成功下载图片'+item.substr(-10,10));
+                download(item, dir, Math.floor(Math.random()*100000) + item.substr(-4, 4));//随机数防止图片重名
+                console.log('成功下载图片' + item.substr(-10, 10));
                 callback(null, item);
             }, function(err, results) {
-                console.log('第'+index+'页全部爬完。');
+                console.log(`第${index}页全部爬完。`);
             });
         }
     });
@@ -55,10 +55,10 @@ function requestMore(url,index){
 
 // 目标网址
 let urls = [];
-for(let i=1;i<3;i++){//push前X页
-    urls.push('https://tieba.baidu.com/p/4705665446?pn='+i);
+for(let i = 1; i < 3; i++){// push前X页
+    urls.push('https://tieba.baidu.com/p/4705665446?pn=' + i);
 }
 
-for(let i=0;i<urls.length;i++){
-    requestMore(urls[i],i+1);
+for(let i = 0; i < urls.length; i++){
+    requestMore(urls[i], i+1);
 }
