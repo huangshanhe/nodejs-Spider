@@ -4,10 +4,8 @@ var path = require('path');
 var fs = require('fs');
 var async = require('async');
 var mkdirp = require('mkdirp');
-// 需要爬的网址
 const url = 'http://www.mmjpg.com/mm/1';
 
-// 头助攻
 var options = {
     url: url,
     headers: {
