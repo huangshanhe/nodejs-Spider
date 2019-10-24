@@ -29,9 +29,7 @@
 
 ![存](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E5%AD%98.png)
 
-4.有时间可以把爬到的内容更好地展示出来，我这就放在文件夹里没去处理（不要在意图片细节）。
-
-![sex](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/%E6%80%A7%E6%84%9F.png)
+4.有时间可以把爬到的内容更好地展示出来，我这就放在文件夹里没去处理。
 
 注意: 爬的时候用async控制一下异步并发数量 
 
