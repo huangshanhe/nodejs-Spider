@@ -6,16 +6,16 @@ const cheerio = require("cheerio");
 const mkdirp = require('mkdirp');
 const async = require('async');
 
-function requestMore(url,index){
+function requestMore(url, index){
     // 发送请求
     request(
-        {url: url,headers:{'User-Agent': 'request'}},
+        {url: url, headers:{'User-Agent': 'request'}},
         function(error, response, body) {
         if(!error && response.statusCode == 200) {
             const $ = cheerio.load(body);
             $('.title a').each(function() {
                 const info = $(this).attr('title') || '无';
-                if(info.indexOf('湘云雅苑') != -1){//关键字为湘云雅苑
+                if(info.indexOf('湘云雅苑') != -1){ //关键字为湘云雅苑
                     console.log('标题:'+$(this).attr('title').slice(0,40)+'\n网址:'+$(this).attr('href')+'\n');
                 }
             });
