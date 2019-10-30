@@ -4,7 +4,7 @@ var path = require('path');
 var fs = require('fs');
 var async = require('async');
 var mkdirp = require('mkdirp');
-const url = 'http://www.mmjpg.com/mm/1';
+const url = 'http://www.mmjpg.com/mm/2';
 
 var options = {
     url: url,
