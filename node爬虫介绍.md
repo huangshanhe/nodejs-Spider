@@ -33,8 +33,7 @@
 
 注意: 爬的时候用async控制一下异步并发数量 
 
-不然很容易被单IP的巨量 URL 请求攻击到崩溃。为了做一个好公民，也为了减轻网站的压力（其实为了不被封IP），
-我限制了同时并发量最高为5。
+不然很容易被单IP的巨量 URL 请求攻击到崩溃。
 
 ![限制并发](https://raw.githubusercontent.com/huangshanhe/nodejs-Spider/master/imgs/limit.png)
 
