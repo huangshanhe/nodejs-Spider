@@ -27,7 +27,7 @@
     "request": "2.51.0"
   },
   "dependencies": {
-    "async": "2.1.5",
+    "async": "^2.1.5",
     "path": "0.12.7"
   }
 }
