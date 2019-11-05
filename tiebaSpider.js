@@ -17,7 +17,7 @@ mkdirp(dir, function(err) {
     if(err){
         console.log(err);
     } else {
-        console.log(dir+'文件夹创建成功!准备下载');
+        console.log(`${dir}文件夹创建成功!准备下载`);
     }
 });
 
@@ -36,14 +36,14 @@ function requestMore(url,index){
         if(!error && response.statusCode == 200) {
             let $ = cheerio.load(body);
             $('.BDE_Image').each(function(index) {
-                if(index<50){//控制下载数量
+                if(index<50){ // 控制下载数量
                     let src = $(this).attr('src');
                     links.push(src);
                 }
             });
             // 限制单ip请求并发 5个一次
             async.mapLimit(links, 5, function(item, callback) {
-                download(item, dir, Math.floor(Math.random()*100000) + item.substr(-4, 4));//随机数防止图片重名
+                download(item, dir, Math.floor(Math.random() * 100000) + item.substr(-4, 4));//随机数防止图片重名
                 console.log('成功下载图片' + item.substr(-10, 10));
                 callback(null, item);
             }, function(err, results) {
@@ -55,8 +55,8 @@ function requestMore(url,index){
 
 // 目标网址
 let urls = [];
-for(let i = 1; i < 3; i++){// push前X页
-    urls.push('https://tieba.baidu.com/p/4705665446?pn=' + i);
+for(let i = 1; i < 3; i++){ // push前X页
+    urls.push(`https://tieba.baidu.com/p/4705665446?pn=${i}`);
 }
 
 for(let i = 0; i < urls.length; i++){
