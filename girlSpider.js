@@ -41,8 +41,8 @@ function requestMore(url,index){
                 links.push(src);
             });
             async.mapLimit(links, 5, function(item, callback) {
-                download(item, dir, Math.floor(Math.random()*100000) + item.substr(-4,4));
-                console.log('成功下载图片' + item.substr(-10,10));
+                download(item, dir, Math.floor(Math.random() * 100000) + item.substr(-4, 4));
+                console.log('成功下载图片' + item.substr(-10, 10));
                 callback(null, item);
             }, function(err, results) {
                 console.log(`第${index}页全部爬完。`);
@@ -54,9 +54,9 @@ function requestMore(url,index){
 // 目标网址
 let urls = [];
 for(let i = 1; i < 2; i++){// push前X页
-    urls.push('http://desk.zol.com.cn/meinv/1920x1080/'+i+'.html');
+    urls.push(`http://desk.zol.com.cn/meinv/1920x1080/${i}.html`);
 }
 
-for(let i=0; i < urls.length; i++){
-    requestMore(urls[i], i+1);
+for(let i = 0; i < urls.length; i++){
+    requestMore(urls[i], i + 1);
 }
